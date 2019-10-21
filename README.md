@@ -1,0 +1,1 @@
+Hackerrank - JavaScript & Python exercices - Maxime Salomon
