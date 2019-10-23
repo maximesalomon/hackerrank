@@ -15,13 +15,21 @@ current_list = None
 
 while not quit:
     command = input(f"\n(C)reate new list\n(S)elect list ({current_list})\n(A)dd item\n(Q)uit\n\nWhat would you like to do? ")
-    command = command.lower().strip()[0]
+    command = command.lower().strip()
+
+    if command == '':
+        continue
+    
+    command = command[0]
+
     if command == "q": # quit
         quit = True
+
     elif command == "c": # create
         name = input("Enter list name: ").strip()
         new_list = TodoList(name)
         all_lists.append(new_list)
+
     elif command == "s": #select
         name = input("Enter list name: ").strip()
         named_list = None
@@ -33,5 +41,12 @@ while not quit:
             print(f"There is no list named {name}")
         else:
             current_list = named_list
+
+    elif command == "a":
+        if current_list == None:
+            print(">>> No list selected")
+        else:
+            item_name = input("Enter item ").strip()
+            current_list.items.append(item_name)
 
 print(all_lists)
