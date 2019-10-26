@@ -1,11 +1,11 @@
-arr = [7, 9, 4, 23, 2, 0, 8, 10, 5]
+lst = [7, 9, 4, 23, 2, 0, 8, 10, 5]
 
-def insertion_sort(arr):
-    for i in range(1, len(arr)):
+def insertion_sort(lst):
+    for i in range(1, len(lst)):
         j = i - 1
-        while arr[j] > arr[j + 1] and j >= 0:
-            arr[j], arr[j + 1] = arr[j + 1], arr[j]
+        while lst[j] > lst[j + 1] and j >= 0:
+            lst[j], lst[j + 1] = lst[j + 1], lst[j]
             j -= 1
-    return arr
+    return lst
 
-print(insertion_sort(arr))
+print(insertion_sort(lst))
