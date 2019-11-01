@@ -7,7 +7,7 @@ def binary_search(lst, num):
         middle = (low + high) // 2
         if middle == num:
             return f"The number your were looking for ({num}) was found."
-        elif num < arr[middle]:
+        elif num < lst[middle]:
             high = middle - 1
         elif num > lst[middle]:
             low = middle + 1
