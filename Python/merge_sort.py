@@ -4,6 +4,7 @@ def merge_sort(lst):
     
     middle = int(len(lst) / 2)
     left, right = merge_sort(lst[:middle]), merge_sort(lst[middle:])
+    
     return merge(left, right)
 
 def merge(left, right):
@@ -25,5 +26,4 @@ def merge(left, right):
 
 
 num_lst = [23, 7, 13, 1, 88, 27]
-
 print(merge_sort(num_lst))
