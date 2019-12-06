@@ -1,4 +1,8 @@
-Hackerrank - JavaScript & Python exercices - Maxime Salomon
+Hackerrank
+
+JavaScript & Python Exercices
+
+Maxime Salomon - 2019
 
 1 - Intro to Python ✅
 2 - Algorithms ✅
