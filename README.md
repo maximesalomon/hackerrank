@@ -1,4 +1,4 @@
-Hackerrank
+Hackerrank & Lambda
 
 JavaScript & Python Exercices
 
