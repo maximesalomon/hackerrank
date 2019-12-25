@@ -17,18 +17,3 @@ const showLength = (arr, cb) => {
 showLength(elements, lengthOfList => {
   console.log(lengthOfList);
 });
-
-//////////////////////
-
-elements.forEach((element, idx) => {
-  console.log(element, idx);
-});
-
-//////////////////////
-
-const newElements = elements.map((element, idx) => {
-  return `${element} ${idx}`;
-});
-
-console.log(newElements);
-console.log(elements);
