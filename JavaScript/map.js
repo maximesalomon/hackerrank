@@ -7,4 +7,6 @@ const newElements = elements.map((element, idx) => {
 console.log(newElements);
 console.log(elements);
 
-// Return a new array
+// Returns a new array of elements.
+// Calls back each element, index and returns each in turn.
+// Used for manipulating or reshaping data.

@@ -4,4 +4,4 @@ elements.forEach((element, idx) => {
   console.log(element, idx);
 });
 
-// Do not return a new array
+// Do not returns a new array of elements.
