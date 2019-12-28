@@ -6,8 +6,8 @@
 const elements = ["earth", "wind", "fire", "water"];
 
 const reducer = (allElements, element) => {
-    return allElements += element;
-}
+  return (allElements += element);
+};
 
 const reduceElements = elements.reduce(reducer, []);
 
