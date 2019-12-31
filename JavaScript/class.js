@@ -30,7 +30,5 @@ class Cat extends Animal {
 const bowWow = new Dog("Grizzly");
 const kitty = new Cat("Fluffertons");
 
-console.log(bowWow);
-console.log(kitty);
 bowWow.speak();
 kitty.speak();
