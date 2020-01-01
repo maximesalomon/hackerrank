@@ -1,0 +1,1 @@
+mainHeaderRed = document.querySelector('.main-header').style.color = 'red';
