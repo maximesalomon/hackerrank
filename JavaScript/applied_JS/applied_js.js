@@ -1,7 +1,7 @@
 mainHeaderRed = document.querySelector('.main-header').style.color = 'red';
 
-const sayHello = () => {
-    alert("Hello 👋")
+const sayHelloWorld = () => {
+    alert("Hello world 👋")
 }
 
-helloBtn = document.getElementById('hello-btn').addEventListener('click', sayHello)
+helloBtn = document.getElementById('hello-btn').addEventListener('click', sayHelloWorld)
