@@ -4,4 +4,9 @@ const sayHelloWorld = () => {
     alert("Hello world 👋")
 }
 
-helloBtn = document.getElementById('hello-btn').addEventListener('click', sayHelloWorld)
+const sayHelloAll = () => {
+    alert("Hello all 👋")
+}
+
+helloWorld = document.getElementById('hello-world').addEventListener('click', sayHelloWorld)
+helloAll = document.getElementById('hello-all').addEventListener('click', sayHelloAll)
