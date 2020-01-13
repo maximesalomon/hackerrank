@@ -1,11 +1,24 @@
 import React from 'react';
-import './App.css';
+import { Formik, Form, Field } from 'formik';
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>Formik</h1>
-    </div>
+    <Formik
+      initialValues={{ name:'', password:'' }}
+      onSubmit={( values, tools ) => {
+        console.log(values, tools)
+        tools.resetForm()
+      }}>
+      {props => {
+        return (
+          <Form>
+            <Field name='name' type='text' placeholder='Name'></Field>
+            <Field name='password' type='password' placeholder='Password'></Field>
+            <input type='submit' />
+          </Form>
+        )
+      }}
+      </Formik>
   );
 }
 
