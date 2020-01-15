@@ -1,15 +1,15 @@
-// import React from 'react';
+import React from 'react';
 
-exports.sum = (a, b) => {
-  return a + b;
-}
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <h1>Jest</h1>
-//     </div>
-//   );
+// exports.sum = (a, b) => {
+//   return a + b;
 // }
 
-// export default App;
+function App() {
+  return (
+    <div className="App">
+      <span className="greet">Hello, world!</span>
+    </div>
+  );
+}
+
+export default App;
