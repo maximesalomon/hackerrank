@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Link } from "react-router-dom";
 import { Index } from "./pages/Index";
 import { About } from "./pages/About";
+import { UserContext } from "./UserContext";
 
 const App = () => {
+  const [value, setValue] = useState("Hello from value");
   return (
     <div className="App">
       <nav>
@@ -17,8 +19,10 @@ const App = () => {
         </ul>
       </nav>
       <header></header>
-      <Route path="/" exact component={Index} />
-      <Route path="/about" component={About} />
+      <UserContext.Provider value={{ value, setValue }}>
+        <Route path="/" exact component={Index} />
+        <Route path="/about" component={About} />
+      </UserContext.Provider>
     </div>
   );
 };
