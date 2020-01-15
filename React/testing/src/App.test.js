@@ -5,7 +5,7 @@ describe("helper mobule", () => {
     it("can add two numbers", () => {
       const expectedOutput = 10;
       const actualOutput = helper.sum(5, 5);
-      expectedOutput(actualOutput).toBe(expectedOutput);
+      expect(actualOutput).toBe(expectedOutput);
     });
   });
 });
