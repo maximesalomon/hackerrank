@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, createContext } from "react";
 import { Route, Link } from "react-router-dom";
 import { Index } from "./pages/Index";
 import { About } from "./pages/About";
-import { UserContext } from "./UserContext";
+
+export const UserContext = createContext(null);
 
 const App = () => {
   const [value, setValue] = useState("Hello from value");
