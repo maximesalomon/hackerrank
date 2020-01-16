@@ -39,19 +39,17 @@ const App = () => {
         <input value={text} onChange={e => setText(e.target.value)}></input>
       </form>
       <p>TODO Count = {todoCount}</p>
-      <ul>
         {todos.map((t, idx) => (
-          <li
+          <div
             key={t.text}
             onClick={() => dispatch({ type: "DONE", idx })}
             style={{
               textDecoration: t.completed ? "line-through" : ""
             }}
           >
-            {t.text}
-          </li>
+            {t.completed ? "✅" : "☑️"} {t.text}
+          </div>
         ))}
-      </ul>
     </div>
   );
 };
