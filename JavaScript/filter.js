@@ -6,7 +6,7 @@
 const elements = ["earth", "wind", "fire", "water"];
 
 const elementIsWater = elements.filter(element => {
-  return element == "water"
+  return element == "water";
 });
 
 console.log(elementIsWater);

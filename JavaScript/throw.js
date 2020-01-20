@@ -6,15 +6,16 @@
  */
 
 const isPositive = a => {
-    if (a > 0) {
-        return "YES";
-    } if (a === 0) {
-        throw Error("Zero Error")
-    } else {
-        throw Error("Negative Error")
-    }
-}
+  if (a > 0) {
+    return "YES";
+  }
+  if (a === 0) {
+    throw Error("Zero Error");
+  } else {
+    throw Error("Negative Error");
+  }
+};
 
-console.log(isPositive(7))
-console.log(isPositive(0))
-console.log(isPositive(-13))
+console.log(isPositive(7));
+console.log(isPositive(0));
+console.log(isPositive(-13));
